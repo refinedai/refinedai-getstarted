@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>RefinedAI: Run specialized models on the clients</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./shared/tfjs-examples.css" />
+    </head>
+    
+    <style>
+    .pred-container {
+        margin-bottom: 20px;
+    }
+    
+    .pred-container > div {
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+    
+    .row {
+        display: table-row;
+    }
+    .cell {
+        display: table-cell;
+        padding-right: 20px;
+    }
+    
+    #file-container {
+        margin-bottom: 20px;
+    }
+    </style>
+    
+</head>
+
+<body>
+    
+  <section class='title-area'>
+    <h1>RefinedAI: Run specialized models on the clients</h1>
+  </section>
+
+  <section>
+    <p class='section-head'>Description</p>
+    Please see details in the README <a href="./README.md"> here</a>
+    <p>
+  </section>
+
+  <section>
+    <p class='section-head'>Sample input</p>
+  
+    <img id="imgdiv" src="./peacock.jpg" width=224 height=224 />
+  </section>
+
+  <!-- Load the latest version of TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  
+  <!-- Optionally, load the helper script for help improve AI -->
+  <!-- <script src="azure-storage-blob.min.js" charset="utf-8"></script> -->
+
+  <!-- Load the main AI script -->
+  <script src="ai.js" type="module"></script>
+
+</body>
+</html>
